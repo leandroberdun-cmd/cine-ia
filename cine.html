@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineAI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1>🎬 CineAI</h1>
+<p>Tu asistente inteligente de películas</p>
+<button id="darkBtn">🌙 Modo oscuro</button>
+</header>
+
+<div class="chat" id="chat">
+<div class="bot">
+¡Hola! Preguntame qué película querés ver.
+</div>
+</div>
+
+<div class="controls">
+<textarea id="question" placeholder="Ej: recomendame una película de ciencia ficción"></textarea>
+
+<div class="buttons">
+<button onclick="sendQuestion()">Enviar</button>
+<button onclick="summary()">Resumen</button>
+<button onclick="translateText()">Traducir</button>
+</div>
+
+<p id="error"></p>
+
+</div>
+
+<div class="history">
+
+<h3>Historial</h3>
+
+<ul id="historyList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
